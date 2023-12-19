@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Property Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header, main, footer {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: chocolate;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        header{
+            text-align: center;
+            color: #fff;
+            text-align: center;
+            padding: 90px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            background: url('https://i.pinimg.com/564x/59/4d/04/594d04cd56e7deb51a804bc12b7d07c6.jpg') center/cover no-repeat; 
+           
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        section {
+            flex-basis: calc(48% - 20px);
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #e8dbc5;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1{
+            color:#fff;
+        }
+        
+        h2 {
+            color: black;
+        }
+
+        p {
+            color: #666;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        ul {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* New section for owner details card */
+        .owner-card {
+            flex-basis: 48%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .owner-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .contact-icons img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        /* New section for the map */
+        .map-section {
+            flex-basis: calc(48% - 20px);
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Responsive styling for map iframe */
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .mortgage-calculator {
+        max-width: 400px;
+        margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WELCOME TO HIGHLAND BMW COMPANY</h1>
+        <p><Obj>YOU CHOOSE WE GIVE</Obj></p>
+    </header>
+
+    <main>
+        <section>
+            <h2>ADDA HEIGHT MAINROAD</h2>
+            <div><a href="https://scontent.fkul3-3.fna.fbcdn.net/v/t1.6435-9/168945515_4470268342989365_8352166396581028477_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=2be8e3&_nc_ohc=4eTP-DjeD5IAX9RevlI&_nc_ht=scontent.fkul3-3.fna&oh=00_AfCxNeeziPFrOiTaZa9GZWSKbIo7-taDFIwdU8i1iKHjYg&oe=65A7DC02" data-fancybox="gallery1"> <img src="https://scontent.fkul3-3.fna.fbcdn.net/v/t1.6435-9/168945515_4470268342989365_8352166396581028477_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=2be8e3&_nc_ohc=4eTP-DjeD5IAX9RevlI&_nc_ht=scontent.fkul3-3.fna&oh=00_AfCxNeeziPFrOiTaZa9GZWSKbIo7-taDFIwdU8i1iKHjYg&oe=65A7DC02" alt="House Image 1" /> </a> <!-- Add more images for the sliding gallery -->
+            <p>ABOUT THIS PROPERTY:</p>
+            <p><strong>Price:</strong> RM 1,900,000</p>
+            <p><strong>Description:</strong>&nbsp;</p>
+            <ul>
+            <li>Fronting main road</li>
+            <li>Land area 3154 sq. ft.</li>
+            </ul>
+            <p><strong>Property Details:</strong>&nbsp;</p>
+            <ul></ul>
+            <li>Property Type:&nbsp; Shop-Office</li>
+            <li>Land Title: Commercial</li>
+            <li>Tenure: Freehold</li>
+            <li>Built-up Price: RM 351.85 per sq. ft.</li>
+            </ul>
+            </div>
+
+            <div class="map-section">
+                <p> </p>
+                <h2>Location Map</h2>
+                <div class="map-container">
+                    <!-- Replace the URL in the iframe with the actual URL of your map -->
+                    <!--<iframe src="https://www.google.com/maps/place/Jalan+Adda+7,+Adda+Heights,+81100+Johor+Bahru,+Johor/@1.5463813,103.7449994,17z/data=!3m1!4b1!4m6!3m5!1s0x31da6de479df9f73:0xd7984f01666fd6ea!8m2!3d1.5463813!4d103.7475743!16s%2Fg%2F11fzv9w50h?entry=ttu" allowfullscreen="" loading="lazy"></iframe>-->
+                    <img src="C:\Users\User\Desktop\fyp\paden\map.jpg" alt="mapp">
+                </div>
+            </div>
+
+            <div class="mortgage-calculator">
+                <h2>Mortgage Calculator</h2>
+              
+                <label for="loanAmount">Loan Amount ($): </label>
+                <input type="number" id="loanAmount" placeholder="Enter loan amount" /><br>
+              
+                <label for="interestRate">Interest Rate (%): </label>
+                <input type="number" id="interestRate" placeholder="Enter interest rate" /><br>
+              
+                <label for="loanTerm">Loan Term (years): </label>
+                <input type="number" id="loanTerm" placeholder="Enter loan term" /><br>
+              
+                <button onclick="calculateMortgage()">Calculate</button>
+              
+                <h3>Monthly Payment:</h3>
+                <p id="monthlyPayment">RM0.00</p>
+              </div>
+
+        </section>
+
+        
+
+        <section>
+            <h2>FLOOR PLAN</h2>
+
+                    <h3>GROUND FLOOR PLAN</h3>
+                    <a href="http://www.addaheights.com/userfiles/image/type_a_ground_floor.jpg" data-fancybox="gallery1">
+                    <img src="http://www.addaheights.com/userfiles/image/type_a_ground_floor.jpg" alt="Floor Plan 1" width="300" height="200" />
+                    </a>
+
+                    <h3>FIRST FLOOR PLAN</h3>
+                    <a href="http://www.addaheights.com/userfiles/image/type_a_first_floor.jpg" data-fancybox="gallery1">
+                    <img src="http://www.addaheights.com/userfiles/image/type_a_first_floor.jpg" alt="Floor Plan 2" width="300" height="200" />
+                    </a>
+
+                    <h3>SECOND FLOOR PLAN</h3>
+                    <a href="http://www.addaheights.com/userfiles/image/type_a_second_floor.jpg" data-fancybox="gallery1">
+                    <img src="http://www.addaheights.com/userfiles/image/type_a_second_floor.jpg" alt="Floor Plan 3" width="300" height="200" />
+                    </a>
+
+            </div>
+
+           
+        </section>
+
+    </main>
+
+    <!-- New owner details card -->
+
+    <div class="owner-card">
+        <h2>HIGHLAND BMW COMPANY</h2>
+        <div>
+            <a href="https://i.pinimg.com/236x/6b/f9/84/6bf9848077ba4bc6fee4958e0eb4e8e2.jpg" data-fancybox="gallery1"> <img src="https://i.pinimg.com/236x/6b/f9/84/6bf9848077ba4bc6fee4958e0eb4e8e2.jpg" alt="House Image 1" /> </a> <!-- Add more images for the sliding gallery -->
+       
+        <p><strong>Description:</strong>&nbsp;</p>
+        <p>SEARCH THE BEST FOR THE CUSTOMER</p>
+        <h4>YOUR ESTATE AGENT:</h4>
+        <h3>MUHAMMAD FADREN</h3>
+    
+        <div class="contact-icons">
+            <p>Email: highlandbmw@highland.com</p>
+            <p>Phone: +60133720903</p>
+           
+        </div>
+        </div>
+
+    </div>
+    <br>
+    
+
+    <footer>
+        <p>Contact us at: <a href="mailto:info@example.com">highlandbmw@highland.com</a></p>
+    </footer>
+
+    <!-- Include the jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include the Fancybox library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- Initialize Fancybox -->
+    <script>
+        $(document).ready(function () {
+            $("[data-fancybox^='gallery']").fancybox();
+        });
+    </script>
+    <script>
+                function calculateMortgage() {
+            // Get input values
+            var loanAmount = document.getElementById('loanAmount').value;
+            var interestRate = document.getElementById('interestRate').value;
+            var loanTerm = document.getElementById('loanTerm').value;
+
+            // Perform mortgage calculation
+            var monthlyInterest = (interestRate / 100) / 12;
+            var totalPayments = loanTerm * 12;
+            var mortgage = loanAmount * (monthlyInterest * Math.pow(1 + monthlyInterest, totalPayments)) / (Math.pow(1 + monthlyInterest, totalPayments) - 1);
+
+            // Display result
+            document.getElementById('monthlyPayment').textContent = 'RM' + mortgage.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
